@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Multimedia&CSS Animation</title>
+<style>
+body{
+text-align:center;
+background-color:#f0f8ff;
+font-family:Arial;
+}
+h1{
+color:darkblue;
+}
+.box{
+width:100px;
+height:100px;
+background-color:red;
+position:relative;
+animation:MoveBox 4s infinite;
+}
+@keyframe MoveBox{
+0%{left:0px;}
+50%{left:200px;}
+100%{left:0px;}
+}
+</style>
+</head>
+<body>
+<h1>Multimedia &CSS Animation</h1>
+<!--image-->
+<h3>image</h3>
+<img src+"image.jpg"width="200">
+<!--Audio-->
+<h3>Audio</h3>
+<audio control>
+<source src="audio.mp3"type="audio/mp3">
+</audio>
+<!--video-->
+<h3>video</h3>
+<video width="300"controls>
+<source src="video.mp4"type"="video/mp4">
+</video>
+<!--Animation-->
+<h3>CSS Animation</h3>
+<div class="box"></div>
+</body>
+</html>
